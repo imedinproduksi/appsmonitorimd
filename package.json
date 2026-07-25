@@ -1,0 +1,51 @@
+{
+  "name": "appsmonitorimd",
+  "version": "1.0.0",
+  "description": "Sistem Monitoring Terpadu untuk Infrastruktur dan Aplikasi",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "echo 'Build process here'",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js"
+  },
+  "keywords": [
+    "monitoring",
+    "dashboard",
+    "alerts",
+    "performance",
+    "analytics"
+  ],
+  "author": "imedinproduksi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "joi": "^17.9.2",
+    "axios": "^1.4.0",
+    "pg": "^8.11.1",
+    "redis": "^4.6.7",
+    "jsonwebtoken": "^9.0.1",
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
